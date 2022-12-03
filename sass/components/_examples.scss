@@ -1,0 +1,39 @@
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.examples {
+  padding-bottom: 94px;
+}
+
+.examples__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__card {
+  position: relative;
+}
+
+.examles__thumb {
+  position: absolute;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: var(--thumb-background-color);
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.examples__text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+}
