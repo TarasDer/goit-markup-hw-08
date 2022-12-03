@@ -78,22 +78,43 @@
 }
 
 .email__icon {
-  // margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+
+  @media screen and(min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.header_contacts {
+  display: none;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .email {
-  // display: flex;
-  // align-items: center;
-  // margin-right: 30px;
-
   @media screen and(min-width: 768px) {
+    display: flex;
   }
 }
 
 .tel__icon {
-  // margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+
+  @media screen and(min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 
 .tel {
@@ -106,11 +127,16 @@
   text-decoration: none;
   color: var(--description-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.02em;
   transition-property: color;
   transition: var(--anim-type);
+
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
 
 .email:hover,

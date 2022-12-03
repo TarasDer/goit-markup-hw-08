@@ -7,11 +7,15 @@
 
 .examples {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .examples__list {
-  // display: flex;
-  // justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .example__card {
