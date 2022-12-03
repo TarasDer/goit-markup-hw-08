@@ -3,17 +3,38 @@
 }
 
 .page-header__container {
-  width: 1200px;
-  display: flex;
-  align-items: center;
+  width: 480px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+  }
 }
 
 /* ---------Site nav__------- */
 .nav__list {
-  display: flex;
-  gap: 50px;
-  margin-right: 315px;
-  margin-left: 91px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+    margin-right: 96px;
+    margin-left: 87px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 50px;
+    margin-right: 315px;
+    margin-left: 91px;
+  }
 }
 
 .nav__link {
@@ -57,18 +78,21 @@
 }
 
 .email__icon {
-  margin-right: 10px;
+  // margin-right: 10px;
   fill: currentColor;
 }
 
 .email {
-  display: flex;
-  align-items: center;
-  margin-right: 30px;
+  // display: flex;
+  // align-items: center;
+  // margin-right: 30px;
+
+  @media screen and(min-width: 768px) {
+  }
 }
 
 .tel__icon {
-  margin-right: 10px;
+  // margin-right: 10px;
   fill: currentColor;
 }
 
