@@ -7,13 +7,6 @@
   }
 }
 
-.feature__title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  text-transform: uppercase;
-}
-
 .feature__block {
   display: block;
   width: 450px;
@@ -46,11 +39,16 @@
 }
 
 .feature__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature__title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
 }
 
 .feature__description {

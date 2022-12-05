@@ -4,3 +4,16 @@ body {
   font-family: Roboto, Verdana, sans-serif;
   letter-spacing: 0.03em;
 }
+
+.section-title {
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+  }
+}
