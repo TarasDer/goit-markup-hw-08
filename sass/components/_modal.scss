@@ -4,8 +4,13 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 
   background-color: var(--primary-white-color);
   border-radius: 4px;
@@ -45,18 +50,30 @@
 
 .form-description {
   text-align: center;
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 12px;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   font-weight: 700;
   color: var(--text-main-color);
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(23 / 20);
+    width: 448px;
+  }
 }
 
 .modal-form {
-  width: 448px;
+  width: 370px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 .form-field {
@@ -163,9 +180,14 @@
 }
 
 .checkbox-text {
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   color: var(--description-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .terms {

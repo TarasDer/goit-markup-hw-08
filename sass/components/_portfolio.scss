@@ -1,13 +1,25 @@
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filters {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 8px;
+  width: 330px;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .filters__button {
@@ -76,9 +88,17 @@
 
 .works__card {
   background-color: var(--primary-white-color);
-  width: 370px;
+  width: 450px;
   transition-property: box-shadow;
   transition: var(--anim-type);
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .works__card:hover {
