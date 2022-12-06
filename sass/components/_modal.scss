@@ -4,8 +4,11 @@
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
 
-  width: 450px;
   min-height: 609px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;

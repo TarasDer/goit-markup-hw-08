@@ -3,7 +3,6 @@
 }
 
 .page-header__container {
-  // width: 480px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,6 +19,13 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+  }
+}
+
+.header__logo {
+   @media screen and (min-width: 480px) and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 

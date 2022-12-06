@@ -62,7 +62,9 @@
     margin-right: 70px;
     width: 231px;
   }
-  margin-bottom: 60px;
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__title {
@@ -80,7 +82,10 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-bottom: 60px;
+
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .socials__link--round {
