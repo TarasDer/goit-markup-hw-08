@@ -75,7 +75,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
-  max-width: 360px;
+
+  @media screen and(max-width: 1199px) {
+    max-width: 360px;
+  }
 
   @media screen and(min-width: 1200px) {
     font-size: 44px;

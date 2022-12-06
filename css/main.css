@@ -373,7 +373,11 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
-  max-width: 360px;
+}
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1236,8 +1240,12 @@ img {
       -ms-flex-pack: left;
           justify-content: left;
   gap: 8px;
-  max-width: 330px;
   margin-bottom: 50px;
+}
+@media screen and (min-width: 340px) and (max-width: 768px) {
+  .filters {
+    max-width: 330px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filters {
