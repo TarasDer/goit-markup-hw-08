@@ -3,10 +3,15 @@
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  padding: 40px;
 
   min-height: 609px;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 478px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 450px) {
     width: 450px;
   }
 
@@ -53,10 +58,9 @@
 
 .form-description {
   text-align: center;
-  width: 370px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
   margin-bottom: 12px;
   font-size: 20px;
   line-height: calc(30 / 20);
@@ -70,13 +74,13 @@
 }
 
 .modal-form {
-  width: 370px;
+  // width: 100%x;
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 1200px) {
-    width: 448px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 448px;
+  // }
 }
 
 .form-field {
