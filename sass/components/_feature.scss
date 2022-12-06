@@ -9,7 +9,10 @@
 
 .feature__block {
   display: block;
-  width: 450px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 354px;

@@ -3,10 +3,16 @@
 }
 
 .page-header__container {
-  width: 480px;
+  // width: 480px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
   @media screen and (min-width: 768px) {
     width: 768px;

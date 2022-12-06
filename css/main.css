@@ -79,11 +79,17 @@ img {
 }
 
 .container {
-  width: 480px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -125,7 +131,6 @@ img {
 }
 
 .page-header__container {
-  width: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,6 +140,13 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .page-header__container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .page-header__container {
@@ -361,7 +373,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 0 auto;
-  width: 360px;
+  max-width: 360px;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -403,7 +415,11 @@ img {
 
 .feature__block {
   display: block;
-  width: 450px;
+}
+@media screen and (min-width: 480px) {
+  .feature__block {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .feature__block {
@@ -630,6 +646,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -842,7 +861,6 @@ img {
 
 .mail-field {
   display: block;
-  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -853,6 +871,11 @@ img {
   color: var(--primary-white-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 480px) {
+  .mail-field {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mail-field {
@@ -1213,7 +1236,7 @@ img {
       -ms-flex-pack: left;
           justify-content: left;
   gap: 8px;
-  width: 330px;
+  max-width: 330px;
   margin-bottom: 50px;
 }
 @media screen and (min-width: 768px) {
